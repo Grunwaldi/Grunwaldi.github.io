@@ -35,7 +35,18 @@
             text-align: center;
             margin-top: 0;
             font-size: 42px;
+            animation: rainbow 5s infinite;
         }
+        @keyframes rainbow {
+      0% { color: #DF013A; }
+      14% { color: #FE9A2E; }
+      28% { color: #FFFF00; }
+      42% { color: #31B404; }
+      57% { color: 0000FF; }
+      71% { color: 01DFD7; }
+      85% { color: 9A2EFE; }
+      100% { color: DF013A; }
+    }
         h3 {
             margin-bottom: 0;
         }
@@ -53,7 +64,7 @@
 <body>
     
  <h3>CHARLOTTE GRUNWALD</h3>
-    <h1 style="color: #FF0080;">BREAK DANCER</h1>
+    <h1 class="rainbow-text;">BREAK DANCER</h1>
     
     <!-- model-viewer Element für das 3D-Modell und AR -->
     <model-viewer src="Stern3.0_Break_Dancer_fertig22.glb" ios-src="Stern3.0_Break_Dancer_fertig24.usdz" alt="Break Dancer"
